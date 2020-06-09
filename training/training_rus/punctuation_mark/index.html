@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="shortcut icon" href="../../../icons/favicon.png" type="image/x-icon">
+    <title>Тренажёр знаки препинания</title>
+</head>
+<body class="background">
+    <div class="menu">
+        <a href="../../../index.html"><div class="menuBlock menuBlock1">UCHEBA-ONLINE</div></a>
+        <a href="../../../index.html"><div class="menuBlock menuBlock2">Главная</div></a>
+        <a href="../../../subjects/index.html"><div class="menuBlock menuBlock3">Предметы</div></a>
+        <a href="../../../guide/index.html"><div class="menuBlock menuBlock4">Справочник</div></a>
+        <a href="../../index.html"><div class="menuBlock menuBlock5"><span class="currentPage">Задания</span></div></a>
+    </div>
+    <main class="mainground">
+        <div class="header">Тренажёр по знакам препинания</div>
+        <div class="task">
+            <div class="totalTask">В приведённых ниже предложениях пронумерованы все запятые. Выпишите без запятых и пробелов цифру(-ы), обозначающую(-ие) запятую(-ые) при <strong>вводном слове</strong> или <strong>вводных конструкциях.</strong></div>
+            <div class="answerVariantBlockRus">
+                <span class="taskNumber">1.</span> Мальчики,(1) конечно,(2) сделали так,(3) как велела совесть,(4) а совесть — это чувство,(5) помноженное на осознание правоты.
+            </div>
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask01"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">2.</span> — Какая,(1) однако,(2) сила у света,(3) отражённого от осенних лесов! Всё купе как в зареве. И,(4) в частности,(5) ваше лицо.
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask02"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">3.</span> Когда я училась в шестом классе и продолжала читать,(1) как говорится,(2) запоем,(3) вдруг вычитала где-то,(4) что человек за жизнь может прочесть,(5) кажется,(6) не более 10 тысяч книг.
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask03"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">4.</span> Я сегодня снова встретил солнце на палубе,(1) около четырёх утра.<br>В памяти не удержишь,(2) так в душе останется и,(3) может,(4) в последний час откликнется именно этот восход солнца на Ангаре-реке.
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask04"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">5.</span> Поведение учительницы было,(1) на его взгляд,(2) лишено логики: тащиться в театр,(3) да ещё в неокончившиеся каникулы,(4) с классом?
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask05"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">6.</span> И,(1) быть может,(2) поэтому я была несправедлива к тебе. Но теперь я хочу,(3) чтобы ты был счастлив,(4) Коля.
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask06"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">7.</span> Нет,(1) опасный волшебник,(2) разумеется,(3) не стал бы говорить так,(4) и она подошла ближе.
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask07"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">8.</span> Так под песню запечного сверчка ушёл из жизни застенчивый башмачник,(1) ничем,(2) конечно,(3) не замечательный,(4) кроме того,(5) что он подарил миру своего сына — сказочника и поэта.
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask08"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">9.</span> Потом,(1) когда у них родились три мальчика и девочка,(2) любимой историей в семье,(3) естественно,(4) был рассказ искателя о Мечте,(5) о Мудреце,(6) о дереве и о концерте,(7) где Мечта реализовалась.
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask09"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">10.</span> Можно,(1) конечно,(2) подойти,(3) а можно и не подходить,(4) это будет нехорошо,(5) но справедливо...
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask10"></div>
+        </div>
+        <input class="sendAnswers" type="button" value="Завершить тест" id="btnComplete">
+        <div class="yourScore hidden" id="yourScoreId">
+            <div class="variantNumber">Вы решили <span id="countCompleteTasks"></span> из 10 заданий</div>
+        </div>
+        <table border="1" class="scoreTable hidden" id="scoreTableId">
+            <tr><th>№</th><th>Ваш ответ</th><th>Правильный ответ</th></tr>
+            <tr><td>1</td><td class="yourAnswer" id="yourAnswer01"></td><td>12</td></tr>
+            <tr><td>2</td><td class="yourAnswer" id="yourAnswer02"></td><td>1245</td></tr>
+            <tr><td>3</td><td class="yourAnswer" id="yourAnswer03"></td><td>1256</td></tr>
+            <tr><td>4</td><td class="yourAnswer" id="yourAnswer04"></td><td>34</td></tr>
+            <tr><td>5</td><td class="yourAnswer" id="yourAnswer05"></td><td>12</td></tr>
+            <tr><td>6</td><td class="yourAnswer" id="yourAnswer06"></td><td>12</td></tr>
+            <tr><td>7</td><td class="yourAnswer" id="yourAnswer07"></td><td>23</td></tr>
+            <tr><td>8</td><td class="yourAnswer" id="yourAnswer08"></td><td>23</td></tr>
+            <tr><td>9</td><td class="yourAnswer" id="yourAnswer09"></td><td>34</td></tr>
+            <tr><td>10</td><td class="yourAnswer" id="yourAnswer10"></td><td>12</td></tr>
+        </table>
+
+    </main>
+    <script>
+        'use strict';
+        btnComplete.addEventListener('click', function(e) {
+            let answer = [], trueAnswer = ['12', '1245', '1256', '34', '12', '12', '23', '23', '34', '12'];
+            let countCompleteTasksVariable = 0;
+            let allInputs = document.getElementsByClassName('inputAnswer');
+            let yourAns = document.getElementsByClassName('yourAnswer');
+            for (let i = 0; i < 10; ++i) {
+                answer[i] = (allInputs[i]).value;
+            }
+            for (let i = 0; i < 10; ++i) {
+                (yourAns[i]).innerHTML = answer[i];
+                if (answer[i] == trueAnswer[i]) {
+                    (yourAns[i]).classList.add('greenBG');
+                    ++countCompleteTasksVariable;
+                }
+                else {
+                    (yourAns[i]).classList.add('redBG');
+                }
+            }
+            countCompleteTasks.innerHTML = countCompleteTasksVariable;
+            let allTasks = document.getElementsByClassName('task');
+            for (let i = 0; i < 10; ++i) {
+                (allTasks[i]).classList.add('hidden');
+            }
+            btnComplete.classList.add('hidden');
+            yourScoreId.classList.remove('hidden');
+            scoreTableId.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>

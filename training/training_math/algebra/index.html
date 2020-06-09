@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="shortcut icon" href="../../../icons/favicon.png" type="image/x-icon">
+    <title>Тренажёр алгебра</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="background">
+    <div class="menu">
+        <a href="../../../index.html"><div class="menuBlock menuBlock1">UCHEBA-ONLINE</div></a>
+        <a href="../../../index.html"><div class="menuBlock menuBlock2">Главная</div></a>
+        <a href="../../../subjects/index.html"><div class="menuBlock menuBlock3">Предметы</div></a>
+        <a href="../../../guide/index.html"><div class="menuBlock menuBlock4">Справочник</div></a>
+        <a href="../../index.html"><div class="menuBlock menuBlock5"><span class="currentPage">Задания</span></div></a>
+    </div>
+    <main class="mainground">
+        <div class="header">Тренажёр по алгебре</div>
+        <div class="task">
+            <span class="taskNumber">1.</span> Найдите значение выражения \(\;(1,4 * 10^{-2}) * (4 * 10^{-3})\)
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask01"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">2.</span> Найдите значение выражения <span class="fract">\(\; {\sqrt{87}\,*\,\sqrt{48} \over \sqrt{116}} \)</span>
+            <div class="answerVariants">
+                <div class="answerVariant answerVariant1">\(1) \, 5\sqrt3\)</div>
+                <div class="answerVariant answerVariant2">\(2) \, 6\)</div>
+                <div class="answerVariant answerVariant3">\(3) \,6\)<span class="fract">\({1\over 3}\)</span></div>
+                <div class="answerVariant answerVariant4">\(4) \,5\)</div>
+            </div>
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask02"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">3.</span> Решите уравнение <span class="fract">\({5 \over 3-x}\)</span> \(+\) <span class="fract">\({8 \over x-6}\)</span> \(= 3\)
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask03"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">4.</span> Дана арифметическая прогрессия \((a_n),\,\) разность которой равна \(-4,5,\,a_1 = 5,6.\,\) Найдите \(a_9.\) 
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask04"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">5.</span> Найдите значение выражения \(\,8xy + 4(x - y)^2\,\) при \(\,x = \sqrt{11},\,y = \sqrt5\)
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask05"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">6.</span> Запишите десятичную дробь, равную сумме \(\,5 * 10^{-1} + 3 * 10^{-2} + 2 * 10^{-4}\)
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask06"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">7.</span> Представьте выражение <span class="fract">\(\,{1 \over a^{-5}}\)</span> \(*\) <span class="fract">\({1 \over a^6}\,\)</span> в виде степени с основанием \(\,a.\)
+            <div class="answerVariants">
+                <div class="answerVariant answerVariant1">\(1) \, a^{-30}\)</div>
+                <div class="answerVariant answerVariant2">\(2) \, a^{-1}\)</div>
+                <div class="answerVariant answerVariant3">\(3) \, a\)</div>
+                <div class="answerVariant answerVariant4">\(4) \, a^2\)</div>
+            </div>
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask07"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">8.</span> Квадратный трёхчлен разложен на множители: \(\,2x^2 - 5x - 12 = 2(x - 4)(x - a).\,\) Найдите \(a.\)
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask08"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">9.</span> Дана геометрическая прогрессия \(\,(b_n),\,\) знаменатель которой равен \(\,4,\,b_1 = 11.\,\) Найдите \(\,b_4.\)
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask09"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">10.</span> Найдите значение выражения <span class="fract">\(\,{3y \over 5x}\)</span> \(-\) <span class="fract">\({9y^2 + 25x^2 \over 15xy}\)</span> \(+\) <span class="fract">\({5x-3y\over 3y}\,\)</span> при \(\,x = 12,\,y = 23.\)
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask10"></div>
+        </div>
+        <input class="sendAnswers" type="button" value="Завершить тест" id="btnComplete">
+        <div class="yourScore hidden" id="yourScoreId">
+            <div class="variantNumber">Вы решили <span id="countCompleteTasks"></span> из 10 заданий</div>
+        </div>
+        <table border="1" class="scoreTable hidden" id="scoreTableId">
+            <tr><th>№</th><th>Ваш ответ</th><th>Правильный ответ</th></tr>
+            <tr><td>1</td><td class="yourAnswer" id="yourAnswer01"></td><td>0,000056</td></tr>
+            <tr><td>2</td><td class="yourAnswer" id="yourAnswer02"></td><td>2</td></tr>
+            <tr><td>3</td><td class="yourAnswer" id="yourAnswer03"></td><td>2,5;4</td></tr>
+            <tr><td>4</td><td class="yourAnswer" id="yourAnswer04"></td><td>-30,4</td></tr>
+            <tr><td>5</td><td class="yourAnswer" id="yourAnswer05"></td><td>64</td></tr>
+            <tr><td>6</td><td class="yourAnswer" id="yourAnswer06"></td><td>0,5302</td></tr>
+            <tr><td>7</td><td class="yourAnswer" id="yourAnswer07"></td><td>2</td></tr>
+            <tr><td>8</td><td class="yourAnswer" id="yourAnswer08"></td><td>-1,5</td></tr>
+            <tr><td>9</td><td class="yourAnswer" id="yourAnswer09"></td><td>704</td></tr>
+            <tr><td>10</td><td class="yourAnswer" id="yourAnswer10"></td><td>-1</td></tr>
+        </table>
+
+    </main>
+    <script>
+        'use strict';
+        btnComplete.addEventListener('click', function(e) {
+            let answer = [], trueAnswer = ['0,000056', '2', '2,5;4', '-30,4', '64', '0,5302', '2', '-1,5', '704', '-1'];
+            let countCompleteTasksVariable = 0;
+            let allInputs = document.getElementsByClassName('inputAnswer');
+            let yourAns = document.getElementsByClassName('yourAnswer');
+            for (let i = 0; i < 10; ++i) {
+                answer[i] = (allInputs[i]).value;
+            }
+            for (let i = 0; i < 10; ++i) {
+                (yourAns[i]).innerHTML = answer[i];
+                if (answer[i] == trueAnswer[i]) {
+                    (yourAns[i]).classList.add('greenBG');
+                    ++countCompleteTasksVariable;
+                }
+                else {
+                    (yourAns[i]).classList.add('redBG');
+                }
+            }
+            countCompleteTasks.innerHTML = countCompleteTasksVariable;
+            let allTasks = document.getElementsByClassName('task');
+            for (let i = 0; i < 10; ++i) {
+                (allTasks[i]).classList.add('hidden');
+            }
+            btnComplete.classList.add('hidden');
+            yourScoreId.classList.remove('hidden');
+            scoreTableId.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="shortcut icon" href="../../../icons/favicon.png" type="image/x-icon">
+    <title>Тренажёр реальная математика</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="background">
+    <div class="menu">
+        <a href="../../../index.html"><div class="menuBlock menuBlock1">UCHEBA-ONLINE</div></a>
+        <a href="../../../index.html"><div class="menuBlock menuBlock2">Главная</div></a>
+        <a href="../../../subjects/index.html"><div class="menuBlock menuBlock3">Предметы</div></a>
+        <a href="../../../guide/index.html"><div class="menuBlock menuBlock4">Справочник</div></a>
+        <a href="../../index.html"><div class="menuBlock menuBlock5"><span class="currentPage">Задания</span></div></a>
+    </div>
+    <main class="mainground">
+        <div class="header">Тренажёр по реальной математике</div>
+        <div class="task">
+            <span class="taskNumber">1.</span> В таблице приведены расстояния от Солнца до четырёх планет Солнечной системы. Какая из этих планет дальше всех от Солнца?
+            <table border="1" class="infoTable">
+                <tr><th>Планета</th><td>Сатурн</td><td>Венера</td><td>Марс</td><td>Нептун</td></tr>
+                <tr><th>Расстояние (в км)</th><td>\(1,427 * 10^9\)</td><td>\(1,082 * 10^8\)</td><td>\(2,279 * 10^8\)</td><td>\(4,497 * 10^9\)</td></tr>
+            </table>
+            <div class="answerVariants">
+                <div class="answerVariant answerVariant1">\(1)\) Сатурн</div>
+                <div class="answerVariant answerVariant2">\(2)\) Марс</div>
+                <div class="answerVariant answerVariant3">\(3)\) Венера</div>
+                <div class="answerVariant answerVariant4">\(4)\) Нептун</div>
+            </div>
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask01"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">2.</span> Магазин делает скидки для пенсионеров на определённое количество процентов от стоимости покупки. Пакет молока стоит в магазине \(\,60\,\) рублей, а пенсионер заплатил за него \(\,54\,\) рубля. Сколько процентов составляет скидка для этого пенсионера?
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask02"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">3.</span> Точка крепления троса, удерживающего флагшток в вертикальном<br>положении, находится на высоте \(\,6,4\) м от земли. Расстояние от<br>основания флагштока до места крепления троса на земле ровно<br>\(4,8\) м. Найдите длину троса (в метрах).
+            <img class="task3drawingRealMath" src="./images/img1.png">
+            <div class="taskAnswer task3AnswerRealMath">Ответ: <input type="text" class="inputAnswer" id="inputTask03"></div>
+        </div>
+        <div class="task">
+            <div><span class="taskNumber">4.</span> На диаграмме показано распределение количества собранного урожая зерновых по сельским хозяйствам района. Всего было собрано \(\,4500\,\) тонн.</div>
+            <img class="task4drawingRealMath" src="./images/img2.jpg">
+            <div class="descrContinueTask4">Какие из следующих утверждений верны?</div>
+            <div class="answerVariantBlock">
+                <div class="answerVariantBlock1">\(1)\) Количество урожая, собранного \(\,\mathrm{II}\,\) хозяйством больше, чем количество урожая, собранного \(\,\mathrm{I}\,\) хозяйством.</div>
+                <div class="answerVariantBlock2">\(2)\) Одна четвёртая часть от общего количества урожая составляет урожай, собранный \(\,\mathrm{II}\,\) хозяйством.</div>
+                <div class="answerVariantBlock3">\(3)\) Количество урожая, собранного \(\,\mathrm{IV}\,\) хозяйством, меньше, чем собранного \(\,\mathrm{I}\,\) хозяйством.</div>
+                <div class="answerVariantBlock4">\(4)\) Количество урожая, собранного \(\,\mathrm{II}\,\) хозяйством, больше \(\,1000\,\) тонн.</div>
+            </div>
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask04"></div>
+        </div>
+        <div class="task">
+            <div><span class="taskNumber">5.</span> В каждой двадцать пятой банке с леденцами, согласно условиям акции, есть приз. Призы распределены по банкам случайно. Таня покупает банку с леденцами в надежде выиграть приз. Найдите вероятность того, что Таня не найдёт приз в своей банке.</div>
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask05"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">6.</span> В таблице приведены размеры штрафов за превышение максимальной разрешённой скорости, зафиксированной с помощью средств автоматической фиксации, установленных на территории РФ с 1 сентября 2013 года.
+            <table border="1" class="infoTable">
+                <tr><th>Превышение скорости (км/ч)</th><td>\(21 - 40\)</td><td>\(41 - 60\)</td><td>\(61 - 80\)</td><td>\(81\,\) и более</td></tr>
+                <tr><th>Размер штрафа (руб.)</th><td>\(500\)</td><td>\(1000\)</td><td>\(2000\)</td><td>\(5000\)</td></tr>
+            </table>
+            <div class="discrContinueTask6">
+                Какой штраф должен заплатить владелец автомобиля, зафиксированная скорость которого составила \(\,109\,\) км/ч на участке дороги с максимальной разрешённой скоростью \(\,40\,\) км/ч?
+            </div>
+            <div class="answerVariants">
+                <div class="answerVariant answerVariant1">\(1)\, 500\) рублей</div>
+                <div class="answerVariant answerVariant2">\(2)\, 1000\) рублей</div>
+                <div class="answerVariant answerVariant3">\(3)\, 2000\) рублей</div>
+                <div class="answerVariant answerVariant4">\(4)\, 5000\) рублей</div>
+            </div>
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask06"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">7.</span> В таблице приведена стоимость работ по покраске стен.
+            <table border="1" class="infoTable">
+                <tr><th rowspan="2">Цвет стен</th><th colspan="4">Цена в рублях за \(\,1\,\) м\(^2\)<br>(в зависимости от площади помещения)</th></tr>
+                <tr><td>до \(20\) м\(^2\)</td><td>от \(21\) до \(30\) м\(^2\)</td><td>от \(31\) до \(50\) м\(^2\)</td><td>свыше \(50\) м\(^2\)</td></tr>
+                <tr><td>белый</td><td>\(100\)</td><td>\(90\)</td><td>\(80\)</td><td>\(50\)</td></tr>
+                <tr><td>цветной</td><td>\(130\)</td><td>\(110\)</td><td>\(90\)</td><td>\(60\)</td></tr>
+            </table>
+            <div class="discrContinueTask7">
+                Пользуясь данными, представленными в таблице, найдите, сколько рублей нужно заплатить за покраску помещения, если площадь стен \(\,35\) м\(^2,\) стены белые и действует сезонная скидка в \(10\%.\)
+            </div>
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask07"></div>
+        </div>
+        <div class="task">
+            <div><span class="taskNumber">8.</span> Пожарную лестницу длиной \(\,12,5\) м приставили к окну четвёртого этажа дома. Нижний конец лестницы отстоит от стены на \(\,3,5\) м. На какой высоте расположено окно? Ответ дайте в метрах.</div>
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask08"></div>
+        </div>
+        <div class="task">
+            <div><span class="taskNumber">9.</span> На диаграмме представлены итоги контрольного диктанта по русскому языку в 9-х классах.</div>
+            <img class="task9drawingRealMath" src="./images/img3.jpg">
+            <div class="descrContinueTask4">Какие из утверждений относительно контрольного диктанта верны, если всего в школе \(\,100\,\) девятиклассников?</div>
+            <div class="answerVariantBlock">
+                <div class="answerVariantBlock1">\(1)\) Больше половины девятиклассников получили отметку \(\,«3».\)</div>
+                <div class="answerVariantBlock2">\(2)\) Около четверти девятиклассников отсутствовали на контрольном диктанте.</div>
+                <div class="answerVariantBlock3">\(3)\) Отметку \(\,«4»\,\) и \(\,«5»\,\) получила примерно половина девятиклассников.</div>
+                <div class="answerVariantBlock4">\(4)\) Отметку \(\,«3»,\) \(\,«4»\,\) и \(\,«5»\,\) получили более \(\,90\,\) учащихся.</div>
+            </div>
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask09"></div>
+        </div>
+        <div class="task">
+            <span class="taskNumber">10.</span> В таблице представлены результаты четырёх стрелков, показанные ими на тренировке.
+            <table border="1" class="infoTable">
+                <tr><th>Номер стрелка</th><th>Число выстрелов</th><th>Число попаданий</th></tr>
+                <tr><td>\(1\)</td><td>\(100\)</td><td>\(28\)</td></tr>
+                <tr><td>\(2\)</td><td>\(80\)</td><td>\(22\)</td></tr>
+                <tr><td>\(3\)</td><td>\(75\)</td><td>\(27\)</td></tr>
+                <tr><td>\(4\)</td><td>\(60\)</td><td>\(18\)</td></tr>
+            </table>
+            <div class="discrContinueTask10">
+                Тренер решил послать на соревнования того стрелка, у которого относительная частота попаданий выше. Кого из стрелков выберет тренер? Укажите в ответе его номер.
+            </div>
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask10"></div>
+        </div>
+        <input class="sendAnswers" type="button" value="Завершить тест" id="btnComplete">
+        <div class="yourScore hidden" id="yourScoreId">
+            <div class="variantNumber">Вы решили <span id="countCompleteTasks"></span> из 10 заданий</div>
+        </div>
+        <table border="1" class="scoreTable hidden" id="scoreTableId">
+            <tr><th>№</th><th>Ваш ответ</th><th>Правильный ответ</th></tr>
+            <tr><td>1</td><td class="yourAnswer" id="yourAnswer01"></td><td>4</td></tr>
+            <tr><td>2</td><td class="yourAnswer" id="yourAnswer02"></td><td>10</td></tr>
+            <tr><td>3</td><td class="yourAnswer" id="yourAnswer03"></td><td>8</td></tr>
+            <tr><td>4</td><td class="yourAnswer" id="yourAnswer04"></td><td>3</td></tr>
+            <tr><td>5</td><td class="yourAnswer" id="yourAnswer05"></td><td>0,96</td></tr>
+            <tr><td>6</td><td class="yourAnswer" id="yourAnswer06"></td><td>3</td></tr>
+            <tr><td>7</td><td class="yourAnswer" id="yourAnswer07"></td><td>2520</td></tr>
+            <tr><td>8</td><td class="yourAnswer" id="yourAnswer08"></td><td>12</td></tr>
+            <tr><td>9</td><td class="yourAnswer" id="yourAnswer09"></td><td>1</td></tr>
+            <tr><td>10</td><td class="yourAnswer" id="yourAnswer10"></td><td>3</td></tr>
+        </table>
+    </main>
+    <script>
+        'use strict';
+        btnComplete.addEventListener('click', function(e) {
+            let answer = [], trueAnswer = ['4', '10', '8', '3', '0,96', '3', '2520', '12', '1', '3'];
+            let countCompleteTasksVariable = 0;
+            let allInputs = document.getElementsByClassName('inputAnswer');
+            let yourAns = document.getElementsByClassName('yourAnswer');
+            for (let i = 0; i < 10; ++i) {
+                answer[i] = (allInputs[i]).value;
+            }
+            for (let i = 0; i < 10; ++i) {
+                (yourAns[i]).innerHTML = answer[i];
+                if (answer[i] == trueAnswer[i]) {
+                    (yourAns[i]).classList.add('greenBG');
+                    ++countCompleteTasksVariable;
+                }
+                else {
+                    (yourAns[i]).classList.add('redBG');
+                }
+            }
+            countCompleteTasks.innerHTML = countCompleteTasksVariable;
+            let allTasks = document.getElementsByClassName('task');
+            for (let i = 0; i < 10; ++i) {
+                (allTasks[i]).classList.add('hidden');
+            }
+            btnComplete.classList.add('hidden');
+            yourScoreId.classList.remove('hidden');
+            scoreTableId.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
