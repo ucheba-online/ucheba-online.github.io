@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 body {
     margin: 0;
     background-color: #eeeeee;
@@ -940,4 +941,8 @@ th {
 
 .totalTask {
     margin-bottom: 40px;
+}
+
+.step_rus {
+    font-family: 'Ubuntu', sans-serif;
 }
